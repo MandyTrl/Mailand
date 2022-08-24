@@ -2,51 +2,89 @@
 <html>
  <head>
     <link rel="stylesheet" href="style.css"> <!--Lie le fichier CSS au fichier HTML-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
  </head> 
  <body>
+   <div id="title">
+        <h1>Mailand
+            <div id="underline"></div>
+        </h1>
+        <img id="mail" src="/ressources/icons8-mail-100.png" />
+   </div>
    <div id="container">
-    <div id="counter">
-        Messages reçus : 0
+    <div id="head">
+        <button id="count">0</button>Messages reçus
+        <input type="text" placeholder=" New message"/>
+        <button id="write">Write</button>
     </div>
     <div id="msg" class="msg">
-        <img id="profil" src="ressources/woman2.png">
+        <img id="profil" src="ressources/gabriel-silverio-u3WmDyKGsrY-unsplash.jpg">
         <div id="txt">
-            <h2>CSS 3</h2>
+            <div id="header">
+                <h2>Daisy Williams |</h2>
+                <h3>“Thanks you for the invitation</h3>
+            </div>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam atque molestiae ut amet fuga, consectetur commodi nesciunt iusto dicta laudantium delectus aliquam exercitationem reiciendis debitis provident soluta, voluptas qui libero?</p>
         </div>
-        <img id="trash" src="ressources/trash.png">
+        <img id="trash" class="trash" src="ressources/trash.png">
     </div>
     <div id="msg" class="msg">
-        <img id="profil" src="ressources/woman1.png">
+        <img id="profil" src="ressources/mateus-campos-felipe-JoM_lC1WAnE-unsplash.jpg">
         <div id="txt">
-            <h2>Javascript</h2>
+            <div id="header">
+                <h2>Jero Natsh |</h2>
+                <h3>“Job application for a UX Designer</h3>
+            </div>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam atque molestiae ut amet fuga, consectetur commodi nesciunt iusto dicta laudantium delectus aliquam exercitationem reiciendis debitis provident soluta, voluptas qui libero?</p>
         </div>
-        <img id="trash" src="ressources/trash.png">
+        <img id="trash" class="trash" src="ressources/trash.png">
     </div>
     <div id="msg" class="msg">
-        <img id="profil" src="ressources/man1.png">
+        <img id="profil" src="ressources/prince-akachi-J1OScm_uHUQ-unsplash.jpg">
         <div id="txt">
-            <h2>HTML 5</h2>
+            <div id="header">
+                <h2>Iris N'kanga |</h2>
+                <h3>“Our new application..</h3>
+            </div>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam atque molestiae ut amet fuga, consectetur commodi nesciunt iusto dicta laudantium delectus aliquam exercitationem reiciendis debitis provident soluta, voluptas qui libero?</p>
         </div>
-        <img id="trash" src="ressources/trash.png">
+        <img id="trash" class="trash" src="ressources/trash.png">
     </div>
     <div id="msg" class="msg">
-        <img id="profil" src="ressources/group.png">
+        <img id="profil" src="ressources/robert-godwin-cdksyTqEXzo-unsplash.jpg">
         <div id="txt">
-            <h2>HTML 5</h2>
+            <div id="header">
+                <h2>Jim Schwarz |</h2>
+                <h3>“You are invited to our meeting..</h3>
+            </div>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam atque molestiae ut amet fuga, consectetur commodi nesciunt iusto dicta laudantium delectus aliquam exercitationem reiciendis debitis provident soluta, voluptas qui libero?</p>
         </div>
-        <img id="trash" src="ressources/trash.png">
+        <img id="trash" class="trash" src="ressources/trash.png">
     </div>
     <div id="msg" class="msg">
-        <img id="profil" src="ressources/man2.png">
+        <img id="profil" src="ressources/jessica-radanavong-D6t70k8F28w-unsplash.jpg">
         <div id="txt">
-            <h2>HTML 5</h2>
+            <div id="header">
+                <h2>David Nguyen |</h2>
+                <h3>“Think green at work</h3>
+            </div>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam atque molestiae ut amet fuga, consectetur commodi nesciunt iusto dicta laudantium delectus aliquam exercitationem reiciendis debitis provident soluta, voluptas qui libero?</p>
         </div>
-        <img id="trash" src="ressources/trash.png">
+        <img id="trash" class="trash" src="ressources/trash.png">
+    </div>
+    <div id="msg" class="msg">
+        <img id="profil" src="ressources/jimmy-fermin-bqe0J0b26RQ-unsplash.jpg">
+        <div id="txt">
+            <div id="header">
+                <h2>Laura Santos |</h2>
+                <h3>“Customer Service - My Photography</h3>
+            </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam atque molestiae ut amet fuga, consectetur commodi nesciunt iusto dicta laudantium delectus aliquam exercitationem reiciendis debitis provident soluta, voluptas qui libero?</p>
+        </div>
+        <img id="trash" class="trash" src="ressources/trash.png">
     </div>
    </div>
    <script src="script.js"></script> <!--Lie le fichier JS au fichier HTML-->
