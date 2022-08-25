@@ -9,6 +9,7 @@ h1 {
     font-family: 'Pacifico', cursive;
     font-size: 45px;
     color: #cc8e35;
+    z-index: 1;
     /* margin-left: 4px; */
 }
 
@@ -47,6 +48,10 @@ input[type=text]:focus {
     background-color: #eaf9ff;
 }
 
+::-webkit-scrollbar {
+    display: none;
+    }
+
 #title {
     display: flex;
     flex-direction: row;
@@ -70,12 +75,14 @@ input[type=text]:focus {
     -ms-transform: rotate(15deg);
     -o-transform: rotate(15deg);
     transform: rotate(15deg);
-    padding-bottom: 95px;
-    width: 80px;
+    padding-bottom: 115px;
+    padding-left: 130px;
+    width: 100px;
+    z-index: 0;
     position: absolute;
 }
 
-#write {
+#search {
     font-size: 11px;
     color: #cc8e35;
     background-color: #ffda79;
@@ -86,7 +93,7 @@ input[type=text]:focus {
     border-color: transparent;
 }
 
-#write:hover {
+#search:hover {
     background-color: #cc8e35;
     color: #ffda79;
     border-bottom: #ffda79 3px solid;
