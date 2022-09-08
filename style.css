@@ -29,6 +29,9 @@ h3 {
 body{
     background-color: #ffda79;
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 input[type=text] {
@@ -111,11 +114,10 @@ input[type=text]:focus {
 #container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    flex: 1;
     /* align-items: center; */
     background-color: #ffda79;
     width: 50em;
-    margin-left: 14em;
     border: #cc8e35 1px solid;
     /* box-shadow: 0 0 0 80vmax rgba(255, 177, 66,1.0); */
 }

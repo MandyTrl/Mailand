@@ -19,13 +19,14 @@ document.getElementById("search").addEventListener("click",
     function(){
         let value = document.getElementById("saisie").value;
         let sender = document.getElementsByTagName("h2");
-        console.log("Saisie récupérée : "+value);
-        sender.filter(item => sender.includes(value))
-        // sender.each(function(){
-        //     if(value != this.textContent()){
-        //         .filter(item => tableau.includes(search))
-        //         this.parent().parent().parent().fadeOut();
-        //     }
-        // })
+        let msg = document.getElementsByClassName("msg");
+        console.log("Saisie récupérée : ",value);
+        // msg.filter(item => sender.includes(value));
+        for(i=0; i<sender.length; i++){
+            if(sender.length[i] === value){
+                msg.show(sender.length[i])
+            }
+        }
+        // msg.show(sender.includes(value));
     }
 ); ///Détection du click sur le bouton "search" + récupère la valeur saisie dans la barre de recherche
