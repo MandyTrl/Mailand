@@ -17,16 +17,14 @@ for(let i=0; i<document.getElementsByClassName("trash").length; i++){
 document.getElementById("search").addEventListener("click",
     function(){
         let value = document.getElementById("saisie").value; ///Variable qui récupère la saisie de l'input
-        let sender = document.getElementsByTagName("h2");
-        let msg = document.getElementsByClassName("msg");
-        console.log("type sender : ", typeof(sender), " type msg : ", typeof(msg));
-        console.log("tableau msg :", msg);
-        console.log("tableau sender :", sender);
-        for (let i=0; i < sender.length; i++){
-            let senderSelected = sender[i].includes(value)
-            for (let i=0; i < msg.length; i++){
-                msg.filter(item => senderSelected);
+        let sender = document.getElementsByTagName("h2"); ///Variable initialisée au tableau des <h2>
+        // let msg = document.getElementsByClassName("msg"); ///Variable initialisée au tableau des <div> "msg"
+
+        for(i in sender){
+            if(sender[i] === value){
+                let filteredMsg = sender.parentNode.parentNode.parentNode.filter(value)
             }
         }
+
     }
 ); ///Détection du click sur le bouton "search" + récupère la valeur saisie dans la barre de recherche
